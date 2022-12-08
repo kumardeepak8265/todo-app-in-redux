@@ -17,7 +17,7 @@ const App: FC = () => {
   return (
     <div>
       <NavBar></NavBar>
-      <div className="sm:px-16 space-y-4 m-2">
+      <div className="sm:px-16 space-y-4 m-6">
         <h3 className="text-bold">things to do</h3>
         {todoForm && (
           <button
