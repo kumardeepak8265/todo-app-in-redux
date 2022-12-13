@@ -27,13 +27,12 @@ const App: FC = () => {
             ADD TODO
           </button>
         )}
-        <TodoList todos={todoComplete}></TodoList>
+        <TodoList todos={todoNotComplete}></TodoList>
         {!todoForm && (
           <TodoCreateForm todoForm={onhandleFormControl}></TodoCreateForm>
         )}
-
         <h3 className="text-bold">things done</h3>
-        <TodoList todos={todoNotComplete}></TodoList>
+        <TodoList todos={todoComplete}></TodoList>
       </div>
     </div>
   );
